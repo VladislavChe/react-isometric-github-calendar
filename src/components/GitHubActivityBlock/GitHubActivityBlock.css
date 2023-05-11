@@ -1,0 +1,27 @@
+.gitHubActivityBlock {
+    padding: 4rem 0;
+}
+.gitHubActivityBlock__title {
+    font-size: 2rem;
+}
+.gitHubActivityBlock__progressList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.gitHubActivityBlock__progressList li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 31%;
+
+    border: 2px solid var(--color-primary);
+    padding: 1rem 0.5rem 1.5rem 0.5rem;
+}
+.gitHubActivityBlock__progressList li span {
+    font-size: 3rem;
+    color: var(--color-primary);
+}

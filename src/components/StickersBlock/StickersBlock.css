@@ -1,0 +1,105 @@
+.stickersBlock {
+    padding: 4rem 0;
+}
+.stickersBlock__title {
+    margin-bottom: 2rem;
+}
+.stickersBlock__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.stickersBlock__list li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 195px;
+    height: 195px;
+    margin: 15px;
+
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.stickersBlock__list li:hover .stickersBlock__front-side--visible {
+    background-color: #f0f0f0;
+    transition: all 0.5s ease;
+}
+
+.stickersBlock__list li svg {
+    padding: 20%;
+    width: 100%;
+    height: 100%;
+}
+.flip-card {
+    background-color: #fff;
+    width: 195px;
+    height: 195px;
+    perspective: 1000px;
+    transition: all 0.5s ease;
+}
+.flip-card:hover .flip-card-front  {
+    background-color: #f0f0f0;
+    transition: all 0.5s ease;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.flip-card:focus {
+    outline: 0;
+}
+
+.flip-card.flipping .flip-card-inner,
+.flip-card.flipping .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.flip-card.flipping .flip-card-back {
+    visibility: visible;
+    border: 1px solid #fff;
+    transition: all 0.5s ease;
+}
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.flip-card-front {
+    background: #fff;
+    color: black;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-back {
+    background: var(--color-primary);
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    border: 1px solid #fff;
+    transition: all 0.5s ease;
+}
+h3 {
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    color: #fff;
+}

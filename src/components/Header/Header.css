@@ -1,0 +1,75 @@
+.header {
+    padding: 4rem 0;
+}
+.header__logo {
+    width: 100px;
+    height: 100px;
+}
+.header__title {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+    font-size: 25px;
+}
+
+.header__title h1 {
+    font-size: 25px;
+}
+.header__title p {
+    margin-left: 10px;
+}
+.header__heart svg {
+    height: 1rem;
+    width: 18px;
+    animation: heart 1s infinite;
+}
+.header__contacts {
+    margin-top: 1rem;
+}
+.header__contacts svg {
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+}
+.header__contacts-git {
+    display: flex;
+    align-items: center;
+}
+.header__contacts-tg {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+.header__contacts-link {
+    position: relative;
+    margin-right: 10px;
+}
+.header__contacts-link:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    right: 100%;
+    bottom: -0.1rem;
+    left: 0;
+    background-color: tomato;
+    transition: 0.25s;
+}
+.header__contacts-link:hover:after {
+    right: 0;
+}
+.header__contacts-gray-text {
+    color: #AAAAAA;
+}
+@keyframes heart {
+    0% {
+        transform: scale(1) translateY(2px);
+    }
+    90% {
+        transform: scale(1.1) translateY(2px);
+    }
+    100% {
+        transform: scale(1) translateY(2px);
+    }
+}

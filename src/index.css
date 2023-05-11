@@ -1,0 +1,99 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  --color-primary: #008A25;
+}
+body *,
+body *:before,
+body *:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+div,
+textarea,
+p,
+input,
+form,
+span,
+ul,
+li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+address,
+blockquote,
+figure,
+figcaption,
+main,
+details,
+fieldset {
+  display: block;
+  border: 0;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+a {
+  box-sizing: border-box;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  outline: none !important;
+  transition: all 0.5s ease;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s ease;
+}
+button,
+input {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style-type: none;
+  transition: all 0.5s ease;
+}
+button:active,
+input:active,
+button:hover,
+input:hover,
+button:focus,
+input:focus {
+  outline: none;
+  transition: all 0.5s ease;
+}
+input,
+li {
+  list-style-type: none;
+}
+.container {
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
