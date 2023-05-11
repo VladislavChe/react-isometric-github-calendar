@@ -1,42 +1,55 @@
-Demo
+# react-isometric-github-calendar
+
+<img src="./doc/assets/calendar.png" alt="Isometric Github Calendar" width="480px">
+
+## Demo
+
 http://calendar-github.vladislav-che.ru/
 
-What's it?
+## What's it?
+
 Isometric Github Calendar with SVG and React.
 
-Нow to try?
-Rename file .env.example to .env. Add your login and token* from GitHub.
-Run npm start for developer mode.
-⚠️ Attention! Use only the public GihHub token. Better yet, move the api request to the proxy server.
-Best way
-Create a proxy server that will return data from the GitHub Api.
+## Нow to try?
 
-GraphQL query:
+* Rename file `.env.example` to `.env`. Add your login and token* from GitHub.
+* Run `npm start` for developer mode.
 
-query {
-  user(login: "login") {
-    contributionsCollection {
-      contributionCalendar {
-        totalContributions
-        months {
-          name
-          totalWeeks
-          year
-          firstDay
-        }
-        weeks {
-          contributionDays {
-            color
-            contributionCount
-            date
-            weekday
+| :warning: Attention! Use only the public GihHub token. Better yet, move the api request to the proxy server. |
+| --- |
+
+## Best way
+
+* Create a proxy server that will return data from the GitHub Api.
+
+  GraphQL query:
+
+  ```graphql
+  query {
+    user(login: "login") {
+      contributionsCollection {
+        contributionCalendar {
+          totalContributions
+          months {
+            name
+            totalWeeks
+            year
+            firstDay
           }
-          firstDay
+          weeks {
+            contributionDays {
+              color
+              contributionCount
+              date
+              weekday
+            }
+            firstDay
+          }
         }
       }
     }
   }
-}
-Add REACT_APP_PROXY_GITHUB_CALENDAR variable to .env. Assign url to proxy.
+  ```
 
-Remove other variables
+* Add `REACT_APP_PROXY_GITHUB_CALENDAR` variable to `.env`. Assign url to proxy.
+* Remove other variables
